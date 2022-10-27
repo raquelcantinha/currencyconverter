@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="=width=device-width" initial-scale=1.0>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="saudacao__orientacoes">
+            <h1>Conversor <br>de moedas</h1>
+            <h2 id="saudacao"></h2>
+            <p id="orientacoes">No nosso conversor você pode saber a taxa de câmbio do real em relação a outras moedas.
+            <br>Digite o valor em real a ser convertido, e escolha para qual moeda gostaria de converter a quantia digitada.</p>
+        </section>
+        <main id="conversor">
+            <form id="dados" name="conversor">
+                <div id="area__valor__digitado">
+                    <label for="valoremreal" id="orientacao1">Digite o valor em real</label>
+                    <input type="number" id="valoremreal" name="valoremreal" placeholder="Exemplo: 1250.00">
+                </div>
+                <div id="moedas__conversao">
+                    <label id="orientacao2">Quero converter para</label>
+                    <button class="btn" form="conversor" title="Dolar" value="5.41">Dolar</button>
+                    <button class="btn" form="conversor" title="Euro" value="5.29">Euro</button>
+                    <button class="btn" form="conversor" title="Libra" value="5.97">Libra</button>
+                </div>   
+            </form>
+            <p id="valorconvertido">Quanto vale o meu dinheiro?</p>
+            <div id="area__limpar">
+                <input id="apagar" type="button" value="Limpar dados">
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
